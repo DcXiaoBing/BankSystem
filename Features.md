@@ -6,7 +6,7 @@
   - saving/checking
   - can have multiple checking/saving account
 - manage 3 currencies
-  - currencies should be able to exchange between each other
+  - currencie`s should be able to exchange between each other
 - loan(collateral)
   - request
   - repay
