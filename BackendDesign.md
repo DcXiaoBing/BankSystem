@@ -4,12 +4,7 @@
 
 - User
   - Manager
-    - DATA MEMBER
-      - login account
   - Customer
-    - DATA MEMBER
-      - login account
-      - list of accounts
 - LoginAccount
   - DATA MEMBER
     - user name
@@ -41,18 +36,11 @@
             - getIntrest
               - calculate the interest on the balance of the day you calculate the interest
     - StockAccount
-      - DATA MEMBER
-        - balance
-        - list of stock in account
-        - selling list
-        - buying list
-      - METHODS
-        - buyAtPrice
-        - sellAtPrice
-        - buy
-- DataAdapter
-  - pass in result set
-  - output object
+      - balance
+      - list of stock in account
+      - selling list
+      - buying list
+
 - DatabaseManager
   - DataReader
   - DataWriter
@@ -83,16 +71,8 @@
     - exchange rate
   - Method
     - exchange(Currency c, double amout) return exchange amount
-  - Subclasses
-    - all kinds of currency
-      - contain exchange rate
 
-- Stock Manage
-  - signleton
-  - stock list: 
-  - buy list for each stock
-  - selling list for each stock
-- Stock? creat super class for stock? Like fund
+- Stock
   - DATA MEMBER
     - id
     - price
@@ -145,10 +125,3 @@
 ### Manager
 
 - Login
-- Do query
-
-
-Adaptor for database access
-Currency. scalable
-  - sub class
-stock
