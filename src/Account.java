@@ -1,10 +1,14 @@
 public abstract class Account{
-	protected String id;
+	protected int id;
 	protected boolean stockAcc;
 	protected boolean depositAcc;
 	protected boolean savingsAcc;
-	Account(String xid){
+	protected boolean checkingAcc;
+	Account(int xid){
 		this.id = xid;
+	}
+	Account(){
+		
 	}
 	public abstract double getBalance();
 	public abstract Account createAccount();

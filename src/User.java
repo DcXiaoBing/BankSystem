@@ -1,18 +1,22 @@
 
 public class User {
-	private String userId;
+	private int userId;
 	private String login;
 	private String password;
 	
-	User(String xuserId, String xlogin, String xpassword){
+	User(int xuserId, String xlogin, String xpassword){
 		this.userId = xuserId;
 		this.login = xlogin;
 		this.password = xpassword;
 	}
-	public String getuserId() {
+	User(String xlogin, String xpassword){
+		this.login = xlogin;
+		this.password = xpassword;
+	}
+	public int getuserId() {
 		return userId;
 	}
-	public void setuserId(String xuserId) {
+	public void setuserId(int xuserId) {
 		userId = xuserId;
 	}
 	public String getlogin() {

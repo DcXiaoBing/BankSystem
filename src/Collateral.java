@@ -1,20 +1,25 @@
 import java.util.*;
 
 public class Collateral{
-	String id;
+	int id;
 	String name;
 	double value;
 	double amount;
-	Collateral(String xid, String xname, double xvalue, double xamount){
+	Collateral(int xid, String xname, double xvalue, double xamount){
 		this.id = xid;
 		this.name = xname;
 		this.value = xvalue;
 		this.amount = xamount;
 	}
-	public String getid() {
+	Collateral(String xname, double xvalue, double xamount){
+		this.name = xname;
+		this.value = xvalue;
+		this.amount = xamount;
+	}
+	public int getid() {
 		return id;
 	}
-	public void setid(String xid) {
+	public void setid(int xid) {
 		id = xid;
 	}
 	public String getname() {

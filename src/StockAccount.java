@@ -4,8 +4,13 @@ public abstract class StockAccount extends Account{
 	private ArrayList<Stock> stockList = new ArrayList<Stock>();
 	private double balance;
 	//selling and buying list, not sure on the implementation yet, need to see where to put either
-	StockAccount(String xid, double xbalance){
+	StockAccount(int xid, double xbalance){
 		super(xid);
+		this.stockAcc = true;
+		this.balance = xbalance;
+	}
+	StockAccount(double xbalance){
+		super();
 		this.stockAcc = true;
 		this.balance = xbalance;
 	}

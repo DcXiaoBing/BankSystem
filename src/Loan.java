@@ -1,19 +1,25 @@
 import java.util.*;
 
 public class Loan{
-	private String id;
+	private int id;
 	private double originalBalance;
 	private double monthlyRepay;
 	private double remainingBalance;
 	ArrayList<Collateral> collateralList;
-	Loan(String xid, double origBal, double repay, double remainBal, ArrayList<Collateral> colList){
+	Loan(int xid, double origBal, double repay, double remainBal, ArrayList<Collateral> colList){
 		id = xid;
 		originalBalance = origBal;
 		monthlyRepay = repay;
 		remainingBalance = remainBal;
 		collateralList = colList;
 	}
-	public String getid() {
+	Loan(double origBal, double repay, double remainBal, ArrayList<Collateral> colList){
+		originalBalance = origBal;
+		monthlyRepay = repay;
+		remainingBalance = remainBal;
+		collateralList = colList;
+	}
+	public int getid() {
 		return id;
 	}
 	public double getoriginalBalance() {

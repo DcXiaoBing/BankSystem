@@ -4,8 +4,11 @@ public abstract class DepositAccount extends Account{
 	protected double balance;
 	protected ArrayList<Transaction> transactionList = new ArrayList<Transaction>();
 	protected ArrayList<Loan> loanList = new ArrayList<Loan>();
-	DepositAccount(String xid){
+	DepositAccount(int xid){
 		super(xid);
+	}
+	DepositAccount(){
+		super();
 	}
 	public abstract void transferBalance();
 	public abstract void withdrawBalance();

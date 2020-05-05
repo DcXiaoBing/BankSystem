@@ -1,7 +1,12 @@
 public abstract class SavingsAccount extends DepositAccount{
 	private double interest; //5% interest would be 1.05
-	SavingsAccount(String xid, double xinterest){
+	SavingsAccount(int xid, double xinterest){
 		super(xid);
+		this.savingsAcc = true;
+		this.interest = xinterest;
+	}
+	SavingsAccount(double xinterest){
+		super();
 		this.savingsAcc = true;
 		this.interest = xinterest;
 	}

@@ -31,7 +31,6 @@ class DBInitializor{
     public void creatDatabase(){
         String deleteIfExist = "DROP DATABASE IF EXISTS bank_database";
         String creatDatabase = "CREATE DATABASE IF NOT EXISTS bank_database";
-
         try(Connection conn = DriverManager.getConnection(DatabasParameter.JDBC_URL_CREAT, DatabasParameter.JDBC_USER, DatabasParameter.JDBC_PASSWORD)){
             try (Statement stmt = conn.createStatement()) {
                 stmt.executeUpdate(deleteIfExist);

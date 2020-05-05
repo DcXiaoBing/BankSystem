@@ -1,18 +1,22 @@
 import java.util.*;
 
 public class Stock {
-	String id;
+	int id;
 	double price;
 	int amount;
-	Stock(String xid, double xprice, int xamount){
+	Stock(int xid, double xprice, int xamount){
 		id = xid;
 		price = xprice;
 		amount = xamount;
 	}
-	public String getid() {
+	Stock(double xprice, int xamount){
+		price = xprice;
+		amount = xamount;
+	}
+	public int getid() {
 		return id;
 	}
-	public void setid(String xid) {
+	public void setid(int xid) {
 		id = xid;
 	}
 	public double getprice() {
